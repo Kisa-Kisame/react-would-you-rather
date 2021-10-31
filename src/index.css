@@ -1,0 +1,304 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	color: #252525;
+}
+
+a {
+	text-decoration: none;
+	color: #252525;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.btn {
+	text-transform: uppercase;
+	width: 100%;
+	min-height: 30px;
+	border: 1px solid teal;
+	background-color: white;
+	color: teal;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.btn:hover {
+	color: white;
+	background-color: teal;
+	cursor: pointer;
+}
+
+.btn:focus {
+	outline: 0;
+	font-weight: 700;
+	border: 3px solid teal;
+}
+
+.btn:disabled {
+	color: silver;
+	border: 1px solid silver;
+}
+
+hr {
+	border: 1px solid teal;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.active {
+	font-weight: bold;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav ul {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	text-decoration: none;
+}
+
+.nav li:first-child {
+	padding-left: 0;
+}
+
+li {
+	list-style-type: none;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.nav div {
+	flex: 1;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.avatar {
+	height: 100px;
+	border-radius: 50px;
+	margin: 10px;
+}
+
+.home-list {
+	width: 100%;
+	max-width: 600px;
+	border: 1px solid teal;
+}
+
+.nav-home ul {
+	display: flex;
+	padding: 0px;
+	justify-content: center;
+	text-align: center;
+}
+
+.nav-home li {
+	flex: 1;
+}
+
+.nav-home-active {
+	background-color: teal;
+	color: white;
+}
+
+.nav-home li:hover {
+	background-color: rgb(14, 77, 77);
+	color: white;
+	cursor: pointer;
+}
+
+.question {
+	width: 90%;
+	padding: 10px;
+	border: 1px solid teal;
+	border-radius: 5px;
+}
+
+.question-info {
+	display: flex;
+	padding: 10px;
+}
+
+.question-info-txt {
+	flex: 1;
+	padding-left: 20px;
+}
+
+.poll {
+	width: 100%;
+	max-width: 600px;
+	padding: 10px;
+	border: 1px solid teal;
+	border-radius: 5px;
+}
+
+.poll-info {
+	display: flex;
+	padding: 10px;
+}
+
+.poll-info > img {
+	align-self: center;
+}
+
+.poll-info-txt {
+	flex: 1;
+	padding-left: 20px;
+}
+
+.all-options {
+	width: 100%;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.poll-option {
+	flex: 1;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid teal;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.poll-option .vote {
+	display: none;
+}
+
+.progress-bar {
+	width: 100%;
+	border: 1px solid teal;
+}
+
+.percentage {
+	background-color: teal;
+	color: white;
+	text-align: center;
+}
+
+.voted {
+	background-color: rgb(152, 216, 216);
+	position: relative;
+}
+
+.voted .vote {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 53);
+	font-weight: bold;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+}
+
+.radio-group {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.radio-group > label {
+	font-size: 16px;
+	margin: 5px 0;
+}
+
+.new-question {
+	width: 100%;
+	max-width: 600px;
+	padding: 10px;
+	border: 1px solid teal;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.new-question-form input {
+	width: 100%;
+	border: 1px solid teal;
+	border-radius: 5px;
+	min-height: 30px;
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+.new-question-form > button {
+	margin: 20px 0;
+}
+
+.leaderboard {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.user {
+	width: 100%;
+	max-width: 600px;
+	padding: 10px;
+	border: 1px solid teal;
+	border-radius: 5px;
+	display: flex;
+}
+
+.user-info {
+	flex: 3;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.user-score {
+	flex: 1;
+	padding: 0 5px;
+	margin: auto 10px;
+	text-align: center;
+	border: 1px solid teal;
+}
+
+.user > img {
+	align-self: center;
+}
+
+.login {
+	width: 100%;
+	max-width: 600px;
+	padding: 10px;
+	border: 1px solid teal;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.select-user {
+	width: 100%;
+	min-height: 30px;
+	border: 1px solid teal;
+	color: teal;
+	font-size: 16px;
+	margin: 35px auto;
+	padding: 10px;
+}
